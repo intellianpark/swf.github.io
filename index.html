@@ -1,10 +1,144 @@
 ---
 layout: default
-title: "Home"
+title: "연구소명 - 혁신적인 연구를 통해 미래를 선도"
 ---
 
-{% if site.show_excerpts %}
-  {% include home.html %}
-{% else %}
-  {% include archive.html title="Posts" %}
-{% endif %}
+<div class="home">
+  <div class="hero-section">
+    <h1>혁신적인 연구를 통해 미래를 선도하는 연구소</h1>
+    <p class="subtitle">최첨단 기술과 창의적인 아이디어로 사회 발전에 기여합니다</p>
+  </div>
+
+  <div class="features">
+    <div class="feature">
+      <h2>연구 분야</h2>
+      <p>인공지능, 머신러닝, 데이터 사이언스, 로봇공학 등 다양한 분야에서 혁신적인 연구를 진행하고 있습니다.</p>
+    </div>
+    
+    <div class="feature">
+      <h2>연구 성과</h2>
+      <p>국내외 저명한 학술지에 다수의 논문을 발표하고, 다양한 연구 프로젝트를 성공적으로 수행했습니다.</p>
+    </div>
+    
+    <div class="feature">
+      <h2>협력 네트워크</h2>
+      <p>국내외 대학, 연구기관, 기업과의 활발한 협력을 통해 연구의 시너지를 극대화합니다.</p>
+    </div>
+  </div>
+
+  <div class="latest-news">
+    <h2>최근 소식</h2>
+    <div class="news-grid">
+      <div class="news-item">
+        <h3>2024년 연구 프로젝트 시작</h3>
+        <p>새로운 연구 프로젝트가 시작되었습니다. 더 많은 정보는 진행사항 페이지를 확인해주세요.</p>
+        <a href="/progress.html" class="read-more">자세히 보기</a>
+      </div>
+      
+      <div class="news-item">
+        <h3>연구원 모집</h3>
+        <p>우수한 연구원을 모집하고 있습니다. 관심 있는 분들은 연구원 페이지를 확인해주세요.</p>
+        <a href="/researchers.html" class="read-more">자세히 보기</a>
+      </div>
+      
+      <div class="news-item">
+        <h3>최신 논문 발표</h3>
+        <p>최신 연구 성과가 국제 학술지에 발표되었습니다. 성과물 페이지에서 확인하실 수 있습니다.</p>
+        <a href="/publications.html" class="read-more">자세히 보기</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.hero-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+  padding: 0 2rem;
+}
+
+.feature {
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.feature h2 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.latest-news {
+  padding: 0 2rem;
+}
+
+.latest-news h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.news-item {
+  padding: 1.5rem;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  background: white;
+}
+
+.news-item h3 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #667eea;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  
+  .features {
+    grid-template-columns: 1fr;
+  }
+  
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>

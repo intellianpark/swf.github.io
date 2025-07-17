@@ -1,10 +1,10 @@
-title: "Blog Title"
-author: "Blog Author"
-description: "Made with <b style=\"color: #f45;\">&lt;3</b>"
+title: "연구소명"
+author: "연구소장"
+description: "혁신적인 연구를 통해 미래를 선도하는 연구소"
 permalink: /:title/
-lang: "en"
+lang: "ko"
 excerpt_separator: "\n\n\n"
-date_format: "%B %d, %Y"
+date_format: "%Y년 %m월 %d일"
 
 # Layout
 
@@ -16,13 +16,15 @@ minimal: false             # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "archive.html"}
-  - {file: "README.md"}
+  - {file: "about.html", title: "연구소개", icon: "building"}
+  - {file: "researchers.html", title: "연구원", icon: "users"}
+  - {file: "progress.html", title: "진행사항", icon: "chart-line"}
+  - {file: "publications.html", title: "성과물", icon: "book"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+  - {title: 이메일, icon: envelope, url: "mailto:contact@researchlab.com"}
+  - {title: 깃허브, icon: github, url: "https://github.com/researchlab"}
+  - {title: 구독, icon: rss, url: "/feed.xml"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
